@@ -1,0 +1,39 @@
+@use '../variables' as *;
+
+.about-section__agency-link {
+  margin-top: 1.5rem;
+  margin-bottom: 3.25rem;
+}
+
+.about-section__slider {
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  height: 175px;
+  display: flex;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.about-section__slide {
+  width: calc(100% - 1rem);
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.about-section__table-item-title {
+  font-family: Onest, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: $text-accent;
+
+  margin-top: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section__table-item {
+  margin-left: 0;
+  display: block;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $text-light;
+}

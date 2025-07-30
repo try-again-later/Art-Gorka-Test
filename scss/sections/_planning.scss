@@ -1,0 +1,59 @@
+@use '../variables' as *;
+
+.planning-process-list__item-heading {
+  grid-area: 'heading';
+
+  font-family: Gilroy, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+.planning-process-list__item-description {
+  grid-area: description;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.planning-process-list {
+  counter-reset: item 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.planning-process-list__item {
+  display: grid;
+  grid-template-areas:
+    'counter heading'
+    'counter description';
+  gap: 0.5rem 1.5rem;
+
+  counter-increment: item;
+
+  &::before {
+    grid-area: 'counter';
+    grid-row: span 2;
+
+    font-family: Onest, sans-serif;
+    font-size: 2rem;
+    color: $color-primary;
+
+    content: counter(item) ' ';
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid $color-primary;
+  }
+}
+
+.planning-process-list__item-description-paragraph {
+  margin: 0;
+}

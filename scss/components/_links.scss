@@ -1,0 +1,49 @@
+@use '../variables' as *;
+
+.regular-link {
+  color: $text-accent;
+  position: relative;
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    inset: -0.25rem;
+    background-color: $text-light;
+  }
+
+  &:visited {
+    color: $text-accent;
+  }
+}
+
+.regular-link__content {
+  position: relative;
+  z-index: 1;
+}
+
+.underlined-link {
+  font-size: 1rem;
+  font-family: Onest, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: $text-accent;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $text-accent;
+  }
+}
+
+.underlined-link--inverted {
+  color: $color-primary-inverse;
+}
+
+.underlined-link--large {
+  font-size: 1.25rem;
+}

@@ -1,0 +1,57 @@
+@use '../variables' as *;
+
+.contact-us-section__contact {
+  display: grid;
+  grid-template-areas:
+    'link'
+    'title';
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+}
+
+.contact-us-section__contact--with-avatar {
+  grid-template-areas:
+    'avatar link'
+    'avatar title';
+}
+
+.contact-us-section__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.contact-us-section__avatar {
+  grid-area: avatar;
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contact-us-section__link {
+  grid-area: link;
+}
+
+.contact-us-section__title {
+  grid-area: title;
+}
+
+.contact-us-section__address {
+  font-size: 1.25rem;
+  color: $color-primary;
+}
+
+.contact-us-section__email-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact-us-section__email-copy-button {
+  background-color: transparent;
+  border: none;
+}

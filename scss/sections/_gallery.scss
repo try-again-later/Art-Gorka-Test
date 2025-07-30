@@ -1,0 +1,10 @@
+.gallery {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.gallery__image {
+  height: 12.25rem;
+  object-fit: cover;
+}

@@ -1,0 +1,24 @@
+@use 'sass:color';
+@use '../variables' as *;
+
+.text-input {
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  background-color: transparent;
+}
+
+.text-input--inverted {
+  color: color.change($color-primary-inverse, $alpha: 72%);
+  border-color: color.change($color-primary-inverse, $alpha: 20%);
+}
+
+.text-input--inverted::placeholder {
+  color: color.change($color-primary-inverse, $alpha: 72%);
+}
+
+.text-input[required]::before {
+  content: '*';
+}

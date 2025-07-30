@@ -2,10 +2,13 @@
 
 h1 {
   font-family: Gilroy, sans-serif;
+  font-weight: 600;
   font-size: 2.75rem;
+  letter-spacing: -1.6px;
+  line-height: 0.94;
   color: $text-accent;
 
-  margin-top: 1rem;
+  margin-top: 1.75rem;
   margin-bottom: 1rem;
 
   @media (width > $container-mobile) {
@@ -13,4 +16,21 @@ h1 {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
   }
+}
+
+.section-heading {
+  font-family: Gilroy, sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  letter-spacing: -1.6px;
+  line-height: 1.05;
+  color: $text-accent;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-heading--inverted {
+  color: $color-primary-inverse;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
 }

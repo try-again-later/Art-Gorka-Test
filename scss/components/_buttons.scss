@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+%generic-button {
+  display: inline-block;
+  line-height: 1;
+  padding: 1em 2.5em;
+  border: none;
+  text-decoration: none;
+}
+
+.primary-button {
+  @extend %generic-button;
+
+  color: $color-primary-inverse;
+  background-color: $color-primary;
+}
+
+.primary-button--inverted {
+  color: $color-primary;
+  background-color: $color-primary-inverse;
+}
+
+.outline-button {
+  @extend %generic-button;
+
+  color: $color-primary;
+  background-color: $color-primary-inverse;
+  border: 1px solid $text-light;
+}
+
+.button--rounded {
+  border-radius: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
