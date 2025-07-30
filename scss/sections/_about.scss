@@ -6,12 +6,15 @@
 }
 
 .about-section__slider {
-  margin-left: 1rem;
   margin-bottom: 3rem;
   height: 175px;
   display: flex;
   gap: 0.5rem;
   overflow-y: auto;
+
+  @media (width > $container-desktop) {
+    margin-right: calc(($container-desktop - 100vw) / 2);
+  }
 }
 
 .about-section__slide {

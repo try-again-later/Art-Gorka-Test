@@ -1,9 +1,16 @@
+@use '../variables' as *;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+
+  @media (width > $container-desktop) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .desktop-page-nav {
