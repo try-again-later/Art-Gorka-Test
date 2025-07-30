@@ -1,0 +1,23 @@
+@use 'normalize.css';
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Gilroy-Semibold.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Onest';
+  font-size: 1rem;
+  line-height: 1.3333333;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 1rem;
+}
