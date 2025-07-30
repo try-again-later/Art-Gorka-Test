@@ -351,6 +351,14 @@ address {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media (width > 90rem) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -365,6 +373,7 @@ address {
 }
 
 .section {
+  position: relative;
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
@@ -515,6 +524,12 @@ h1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media (width > 90rem) {
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
 
 .desktop-page-nav {
   display: none;
@@ -639,12 +654,16 @@ h1 {
 }
 
 .about-section__slider {
-  margin-left: 1rem;
   margin-bottom: 3rem;
   height: 175px;
   display: flex;
   gap: 0.5rem;
   overflow-y: auto;
+}
+@media (width > 90rem) {
+  .about-section__slider {
+    margin-right: calc((90rem - 100vw) / 2);
+  }
 }
 
 .about-section__slide {
@@ -689,7 +708,7 @@ h1 {
 
 .project-filters {
   padding: 0;
-  margin-left: 1rem;
+  margin-right: -1rem;
   margin-top: 2.25rem;
   display: flex;
   gap: 0.5rem;
@@ -868,6 +887,7 @@ h1 {
 .planning-process-list__item {
   display: grid;
   grid-template-areas: "counter heading" "counter description";
+  justify-content: start;
   gap: 0.5rem 1.5rem;
   counter-increment: item;
 }
@@ -946,7 +966,6 @@ h1 {
 }
 
 footer {
-  display: flex;
   background-color: #f4f5f9;
   padding: 1.5rem 0;
 }
